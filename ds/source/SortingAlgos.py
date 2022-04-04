@@ -13,7 +13,24 @@ class SortingAlgos:
 
 	def quickSort(self, low, high):
 		if(low < high):
-			pi = partition(, low, high)
+			pi = SortingAlgos.partition(self.arrNum, low, high)
+			SortingAlgos.quickSort(self, low, pi-1)
+			SortingAlgos.quickSort(self, pi+1, high)
 
 
-			def spartition(self, low, high)
+	def partition(arrNum, low, high):
+		pivote = arrNum[high-1]
+		i = low - 1
+
+		for j in range(high-low+1):
+			if(arrNum[j+low] <= pivote):
+				i += 1
+				temp = arrNum[j+low]
+				arrNum[j+low] =arrNum[i]
+				arrNum[i]  = temp
+		i += 1
+		temp = arrNum[j+low]
+		arrNum[j+low] = arrNum[i]
+		arrNum[i]  =temp
+
+		return i

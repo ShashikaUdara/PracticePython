@@ -14,6 +14,10 @@ class DataStructures:
 		for x in arrNum:
 			print(x)
 
+		obj.quickSort(0, len(arrNum))
+		for x in arrNum:
+			print("-- ", x)
+
 
 ds = DataStructures("Sorting Algos", "04/04/2022")
 ds.controllerFunctionforSorting()
