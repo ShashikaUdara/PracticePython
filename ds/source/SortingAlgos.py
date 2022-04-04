@@ -10,3 +10,10 @@ class SortingAlgos:
 					temp = self.arrNum[j]
 					self.arrNum[j] = self.arrNum[j+1]
 					self.arrNum[j+1] = temp
+
+	def quickSort(self, low, high):
+		if(low < high):
+			pi = partition(, low, high)
+
+
+			def spartition(self, low, high)
