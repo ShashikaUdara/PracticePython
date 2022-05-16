@@ -30,3 +30,16 @@ print(str[6:17]) # prints starting from 7th letter onwards up to 10 characters (
 print(str[1:]) # prints starting from 2nd charater upto end of the sting (dara Abeyrathne)
 print(str * 2) # prints string two times (Udara AbeyrathneUdara Abeyrathne)
 print(str + " Is My Name") # concatinate "Is My Name" to the end of the string (Udara Abeyrathne Is My name)
+
+# python lists
+# not like any other language python lists can have multiple data type in its values
+my_list = ['Udara', 31, 178.5, "Udara Abeyrahtne"]
+temp_list = ['University of Mora', 'Sumangala college Kandy']
+
+print(my_list) # full list
+print(my_list[0]) # first element
+print(my_list[0:2]) # first 2 elements from first element
+print(my_list[1]) # print second element
+print(my_list * 2) # print list two times
+print(my_list + temp_list) # aff temp_list to the my_list
+print(my_list[0][2:5]) # print fist elements 3rd charater onwards up to 5 characters (ara)
