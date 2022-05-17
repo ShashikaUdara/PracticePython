@@ -58,3 +58,8 @@ print(my_tuple[1]) # print second element
 print(my_tuple * 2) # print tuple two times
 print(my_tuple + temp_tuple) # aff temp_tuple to the my_tuple
 print(my_tuple[0][2:5]) # print fist elements 3rd charater onwards up to 5 characters (ara)
+
+my_list[3] = "Apple" # valied
+print(my_list) # full list
+# my_tuple[3] = "Apple" # invalied
+# print(my_tuple) # full tuple
