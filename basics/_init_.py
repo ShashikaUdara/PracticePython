@@ -43,3 +43,18 @@ print(my_list[1]) # print second element
 print(my_list * 2) # print list two times
 print(my_list + temp_list) # aff temp_list to the my_list
 print(my_list[0][2:5]) # print fist elements 3rd charater onwards up to 5 characters (ara)
+
+# python tuples
+# the only difference between tuples and lists is tuples are read-only list. once tuples are enclosed using parentheses
+# they can not be modifies in the run time, but list can
+
+# defining the tuple
+my_tuple = ('Udara', 31, 178.5, "Udara Abeyrahtne")
+temp_tuple = ('University of Mora', 'Sumangala college Kandy')
+print(my_tuple) # full tuple
+print(my_tuple[0]) # first element
+print(my_tuple[0:2]) # first 2 elements from first element
+print(my_tuple[1]) # print second element
+print(my_tuple * 2) # print tuple two times
+print(my_tuple + temp_tuple) # aff temp_tuple to the my_tuple
+print(my_tuple[0][2:5]) # print fist elements 3rd charater onwards up to 5 characters (ara)
