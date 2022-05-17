@@ -63,3 +63,14 @@ my_list[3] = "Apple" # valied
 print(my_list) # full list
 # my_tuple[3] = "Apple" # invalied
 # print(my_tuple) # full tuple
+
+# python dictionaries key-value pair enclosed with {} and access with []
+_dict = {} # defining empty dictionary
+# adding values
+_dict['one'] = 'this is one'
+_dict['two'] = 'this is two'
+_dict['ten'] = 'this is ten'
+print(_dict) # prints entire dictionary
+print(_dict.keys()) # prints only keys
+print(_dict.values()) # print only the values
+print(_dict.get('one')) # getting the value of 'one' key
