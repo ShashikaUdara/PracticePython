@@ -176,3 +176,22 @@ print("list converted to set", new_set, type(new_set))
 # string to set
 new_set = set(test_string_chars)
 print("string converted to set", new_set, type(new_set))
+
+# basic arithmatic operations
+_a = 5
+_b = 4
+print("_a + _b  = ", _a + _b)
+print("_a - _b  = ", _a - _b)
+print("_a / _b  = ", _a / _b)
+print("_a * _b  = ", _a * _b)
+print("_a % _b  = ", _a % _b)
+print("_a ** _b = ", _a **_b)
+
+# user input
+# _name = input("Enter you name: ")
+_name = "Udara" # hard coded for the easyness
+set_vowel = {'a', 'e', 'i', 'o', 'u'}
+if _name[0].lower() in set_vowel:
+    print("Your name starts with a vowel")
+else:
+    print("Your name is not starting with a vowel")
