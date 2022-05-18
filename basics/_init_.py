@@ -90,13 +90,22 @@ test_int = 16
 test_float = 24.567
 test_string = "1234"
 test_string_float = "123.456"
+test_string_chars = "Udara Abeyrathne"
+test_tuple = ('Udara', 12345, TRUE, 12.2356, "my name is abeyrathne")
+test_list = ['Udara', 12345, TRUE, 12.2356, "my name is abeyrathne"]
+test_set = {'Udara', 12345, TRUE, 12.2356, "my name is abeyrathne"}
+
 print(type(test_int))
 print(type(test_float))
 print(type(test_string))
 
 # converting int to string
 new_string = str(test_int)
-print("converted to string:", new_string, type(new_string))
+print("int converted to string:", new_string, type(new_string))
+
+# converting float to string
+new_string = str(test_float)
+print("float converted to string:", new_string, type(new_string))
 
 # converting to integer
 new_int = int(test_string)
@@ -115,3 +124,55 @@ print("int converted to float:", new_float, type(new_float))
 # float type number string to integer
 new_int = int(float(test_string_float))
 print("float type number string converted to int:", new_int, type(new_int))
+
+# string to tuple
+new_tuple = tuple(test_string_chars)
+print("string converted to tuple:", new_tuple, type(new_tuple))
+
+# list to tuple
+new_tuple = tuple(test_list)
+print("list converted to tuple:", new_tuple, type(new_tuple))
+
+# int to tuple
+new_tuple = tuple(str(test_int))
+print("int converted to tuple:", new_tuple, type(new_tuple))
+
+# float to tuple
+new_tuple = tuple(str(test_float))
+print("float converted to tuple:", new_tuple, type(new_tuple))
+
+# string to list
+new_list = list(test_string_chars)
+print("string converted to list:", new_list, type(new_list))
+
+# tuple to list
+new_list = list(test_tuple)
+print("tuple converted to list:", new_list, type(new_list))
+
+# int to list
+new_list = list(str(test_int))
+print("int converted to list:", new_list, type(new_list))
+
+# float to list
+new_list = list(str(test_float))
+print("float converted to list:", new_list, type(new_list))
+
+# set to list
+new_list = list(test_set)
+print("set converted to list:", new_list, type(new_list))
+
+# list to set
+new_set = set(test_list)
+print("list converted to set", new_set, type(new_set))
+
+# tuple to set
+new_set = set(test_tuple)
+print("tuple converted to set", new_set, type(new_set))
+
+# list to set
+new_set = set(test_list)
+print("list converted to set", new_set, type(new_set))
+
+# string to set
+new_set = set(test_string_chars)
+print("string converted to set", new_set, type(new_set))
