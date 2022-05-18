@@ -195,3 +195,36 @@ if _name[0].lower() in set_vowel:
     print("Your name starts with a vowel")
 else:
     print("Your name is not starting with a vowel")
+
+# for with range
+for x in range(10):
+    if x == 0:
+        print("passing if the iterater equels to 0")
+        pass
+    elif x == 5 or x == 7:
+        print("continue the iteration if 5 or 7")
+    elif x == 9:
+        print("braking from the loop")
+        break
+    else:
+        print("counting:",x)
+
+# for with list/set or a tuple
+for x in test_list:
+    print("list item: ", x)
+
+for x in test_set:
+    print("set item: ", x)
+
+for x in test_tuple:
+    print("tuple item: ", x)
+
+# printing stars :P
+stars = ""
+for i in range(10):
+    for j in range(10-i):
+        stars += " "
+    for k in range(2*i+1):
+        stars += "*"
+    print(stars)
+    stars = ""
