@@ -221,10 +221,23 @@ for x in test_tuple:
 
 # printing stars :P
 stars = ""
-for i in range(10):
-    for j in range(10-i):
+levels = 50
+for i in range(levels):
+    for j in range(levels-i):
         stars += " "
     for k in range(2*i+1):
         stars += "*"
     print(stars)
     stars = ""
+
+# while loops
+count = levels
+stars = ""
+while(count > 0):
+    for j in range(levels-count):
+        stars += " "
+    for k in range(2*count+1):
+        stars += "+"
+    print(stars)
+    stars = ""
+    count -= 1
