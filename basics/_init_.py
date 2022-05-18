@@ -2,7 +2,10 @@
     this is a multi-line comment
 '''
 
-from sqlalchemy import false, true
+# from sqlalchemy import false, true
+
+
+from pickle import FALSE, TRUE
 
 
 print("it's init")
@@ -12,10 +15,10 @@ first_name = "Udara"
 last_name = "Abeyrathne"
 email = "udaraabeyrathne2000@gmail.com"
 age = 31
-is_married = false
+is_married = FALSE
 height_in_cm = 178.5
 
-print("My name is", first_name, last_name,". I'm 31 years old and", "Married" if is_married == true else "Single", ". I'm", height_in_cm, " cm tall. My mail address is", email)
+print("My name is", first_name, last_name,". I'm 31 years old and", "Married" if is_married == TRUE else "Single", ". I'm", height_in_cm, " cm tall. My mail address is", email)
 
 # deleting variables (objects) re possible in python
 del first_name, last_name, email, age, is_married, height_in_cm
@@ -23,13 +26,13 @@ del first_name, last_name, email, age, is_married, height_in_cm
 # print("My name is", first_name, last_name,". I'm 31 years old and", "Married" if is_married == true else "Single", ". I'm", height_in_cm, " cm tall. My mail address is", email)
 
 # python strings can be included inside single quatations or inside double quotations
-str = 'Udara Abeyrathne'
-print(str) # prints entire string (Udara Abeyrathne)
-print(str[0]) # prints first letter of the string (U)
-print(str[6:17]) # prints starting from 7th letter onwards up to 10 characters (Abeyrathne)
-print(str[1:]) # prints starting from 2nd charater upto end of the sting (dara Abeyrathne)
-print(str * 2) # prints string two times (Udara AbeyrathneUdara Abeyrathne)
-print(str + " Is My Name") # concatinate "Is My Name" to the end of the string (Udara Abeyrathne Is My name)
+str_1 = 'Udara Abeyrathne'
+print(str_1) # prints entire string (Udara Abeyrathne)
+print(str_1[0]) # prints first letter of the string (U)
+print(str_1[6:17]) # prints starting from 7th letter onwards up to 10 characters (Abeyrathne)
+print(str_1[1:]) # prints starting from 2nd charater upto end of the sting (dara Abeyrathne)
+print(str_1 * 2) # prints string two times (Udara AbeyrathneUdara Abeyrathne)
+print(str_1 + " Is My Name") # concatinate "Is My Name" to the end of the string (Udara Abeyrathne Is My name)
 
 # python lists
 # not like any other language python lists can have multiple data type in its values
@@ -74,3 +77,41 @@ print(_dict) # prints entire dictionary
 print(_dict.keys()) # prints only keys
 print(_dict.values()) # print only the values
 print(_dict.get('one')) # getting the value of 'one' key
+
+# multiple variable assignment
+num_1 = num_2 = num_3 = 12
+print(num_1, num_2, num_3)
+
+num_4, str_2, b_status_1, b_status_2 = 15, "Udara Abeyrathne", TRUE, FALSE
+print(num_4, str_2, b_status_1, b_status_2)
+
+# data type conversions
+test_int = 16
+test_float = 24.567
+test_string = "1234"
+test_string_float = "123.456"
+print(type(test_int))
+print(type(test_float))
+print(type(test_string))
+
+# converting int to string
+new_string = str(test_int)
+print("converted to string:", new_string, type(new_string))
+
+# converting to integer
+new_int = int(test_string)
+print("string converted to int:", new_int, type(new_int))
+
+new_int = int(test_float)
+print("float converted to int:", new_int, type(new_int))
+
+# converting to float
+new_float = float(test_string_float)
+print("string converted to float:", new_float, type(new_float))
+
+new_float = float(test_int)
+print("int converted to float:", new_float, type(new_float))
+
+# float type number string to integer
+new_int = int(float(test_string_float))
+print("float type number string converted to int:", new_int, type(new_int))
