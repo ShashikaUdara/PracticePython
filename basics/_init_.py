@@ -241,3 +241,20 @@ while(count > 0):
     print(stars)
     stars = ""
     count -= 1
+# String Formatting Operator
+print("My name is %s and I have %d cars" % (test_string_chars, test_int))
+
+# Triple Quotes
+triple_qoted_str = """When the above code is executed, it produces the following 
+result. Note how every single special character has been 
+converted to its printed form, right down to the last NEWLINE 
+at the end of the string between the "up." and closing triple 
+quotes. Also note that NEWLINEs occur either with an explicit 
+carriage return at the end of a line or its escape code"""
+print("The message is: %s" % (triple_qoted_str))
+
+# Raw strings
+normal_string = "This is double backslash C\\my_folder"
+row_string = r"This is double backslash C\\my_folder"
+print("%s" % (normal_string)) # without 'r' expression
+print("%s" % (row_string)) # with 'r' expression
