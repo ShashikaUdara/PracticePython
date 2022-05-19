@@ -5,7 +5,10 @@
 # from sqlalchemy import false, true
 
 
+import calendar
 from pickle import FALSE, TRUE
+from re import L
+import time
 
 
 print("it's init")
@@ -258,3 +261,20 @@ normal_string = "This is double backslash C\\my_folder"
 row_string = r"This is double backslash C\\my_folder"
 print("%s" % (normal_string)) # without 'r' expression
 print("%s" % (row_string)) # with 'r' expression
+
+# python date and time
+ticks = time.time()
+print("Number of ticks since 12:00AM, January 1st, 1970:", ticks)
+
+# getting local time
+local_time = time.localtime(time.time())
+print("local time is:", local_time)
+
+# getting formatted local time
+local_time = time.asctime(time.localtime(time.time()))
+print("formatted local time is:", local_time)
+
+# Getting calendar for a month
+_calender = calendar.month(2022, 5)
+print("Calender May 2022")
+print(_calender)
