@@ -278,3 +278,19 @@ print("formatted local time is:", local_time)
 _calender = calendar.month(2022, 5)
 print("Calender May 2022")
 print(_calender)
+
+# Python time clock() Method
+# This is the function to use for benchmarking Python or timing algorithms
+
+# defining a function to monitor the time consumption
+def operation():
+    time.sleep(2.5)
+
+# t_0s = time.clock()
+# operation()
+# print("Time cunsumption of the operation (Seconds process time) : ", time.clock())
+
+t_0s = time.time()
+operation()
+t_ends = time.time()
+print("Time cunsumption of the operation (Seconds wall time) : ", t_ends - t_0s)
