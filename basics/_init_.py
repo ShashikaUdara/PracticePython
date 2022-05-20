@@ -294,3 +294,17 @@ t_0s = time.time()
 operation()
 t_ends = time.time()
 print("Time cunsumption of the operation (Seconds wall time) : ", t_ends - t_0s)
+
+# python functions
+''' 
+In python you are passing paramiters by reference, which means that is you 
+chage a passed value inside of the function, it will reflects all the calling functions as well.
+'''
+
+def displayString(my_name_temp):
+    my_name_temp = "Shashike " + my_name_temp
+    print(my_name_temp)
+
+my_name = "Udara Abeyrathne"
+displayString(&my_name)
+print("My name is: ", my_name)
