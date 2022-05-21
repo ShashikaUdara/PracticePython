@@ -330,7 +330,36 @@ print(test_list_2)
 # identifies the arguments by the parameter name.
 # simply you can skip the arguments
 
-def keyword_function(string_test_3):
+def keyword_function_1(string_test_3):
     print(string_test_3)
 
-keyword_function(string_test_3 = "Udara Abeyrathne")
+keyword_function_1(string_test_3 = "Udara Abeyrathne")
+
+def keyword_function_2(_address, _name, _age = 28):
+    print(_address)
+    print(_age)
+    print(_name)
+
+#  calling the function without considering the paramiter order
+keyword_function_2(_age = 31, _name = "Udara Abeyrathne", _address = "Kandy, Sri Lanka")
+keyword_function_2( _name = "Anonymous", _address = "USA")
+
+# Variable-length arguments
+'''
+You may need to process a function for more arguments than you specified 
+while defining the function. These arguments are called variable-length 
+arguments and are not named in the function definition, unlike required 
+and default arguments.
+'''
+
+def variable_length_args(arg1, *vartuple):
+    print("+++++++++++++++++++++++++++++")
+    print(arg1)
+    for i in vartuple:
+        print(i)
+    print("+++++++++++++++++++++++++++++")
+    return
+
+variable_length_args(11)
+variable_length_args("Udara", 89, 12)
+variable_length_args(234, "Apple", "Bee", TRUE, 987)
