@@ -301,10 +301,36 @@ In python you are passing paramiters by reference, which means that is you
 chage a passed value inside of the function, it will reflects all the calling functions as well.
 '''
 
-def displayString(my_name_temp):
-    my_name_temp = "Shashike " + my_name_temp
+def display_string(my_name_temp, my_address_temp):
+    my_name_temp += " Shashika" # here my_name_temp act as a local variable, hence the changes will not be affected to the caling function
+    my_address_temp += "A"
     print(my_name_temp)
+    print(my_address_temp)
 
 my_name = "Udara Abeyrathne"
-displayString(&my_name)
+my_address = "Kandy"
+display_string(my_name, my_address)
 print("My name is: ", my_name)
+print("My address is: ", my_address)
+
+def display_list(my_list):
+    my_list.extend([2, 3, 4])
+    print(my_list)
+
+test_list_2 = [5, 6, 7]
+display_list(test_list_2)
+print(test_list_2)
+
+# Required arguments
+# Required arguments are the arguments passed to a function in correct positional order.
+
+# Keyword arguments
+# Keyword arguments are related to the function calls. 
+# When you use keyword arguments in a function call, the caller 
+# identifies the arguments by the parameter name.
+# simply you can skip the arguments
+
+def keyword_function(string_test_3):
+    print(string_test_3)
+
+keyword_function(string_test_3 = "Udara Abeyrathne")
