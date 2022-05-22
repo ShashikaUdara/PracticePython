@@ -9,6 +9,7 @@ import calendar
 from pickle import FALSE, TRUE
 from re import L
 import time
+import test_module
 
 
 print("it's init")
@@ -380,3 +381,6 @@ sum = lambda num_1, num_2: num_1 + num_2;
 
 print("sum(11,22):", sum(11,22))
 print("sum(80,97):", sum(80,97))
+
+# modules
+test_module.simple_function(15, "This is a seperated module")
