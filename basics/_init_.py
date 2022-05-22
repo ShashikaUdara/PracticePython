@@ -363,3 +363,20 @@ def variable_length_args(arg1, *vartuple):
 variable_length_args(11)
 variable_length_args("Udara", 89, 12)
 variable_length_args(234, "Apple", "Bee", TRUE, 987)
+
+# The Anonymous Functions
+'''
+These functions are called anonymous because they are not 
+declared in the standard manner by using the def keyword. 
+You can use the lambda keyword to create small anonymous functions.
+
+Such function can take many arguments but return only one value
+Can't have multiple expressions
+Cannot be direct call to print
+have their local namespace
+not inline functions
+'''
+sum = lambda num_1, num_2: num_1 + num_2;
+
+print("sum(11,22):", sum(11,22))
+print("sum(80,97):", sum(80,97))
