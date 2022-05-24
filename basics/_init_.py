@@ -10,6 +10,8 @@ from pickle import FALSE, TRUE
 from re import L
 import time
 import test_module
+from Phone import directory
+
 
 
 print("it's init")
@@ -386,3 +388,15 @@ print("sum(80,97):", sum(80,97))
 test_module.simple_function(15, "This is a seperated module")
 
 # Packages in Python
+directory.my_phone_number() 
+
+# python exception handling
+# Assertions in Python
+
+def power_of_two(num_val):
+    assert(num_val >= 0), "Number is lesser that 0"
+    return num_val ** 2
+
+print(power_of_two(25))
+print(power_of_two(0))
+print(power_of_two(-5))
