@@ -16,6 +16,3 @@ class Person:
 
 	def get_phone(self):
 		return self.phone
-
-class Teacher(Person):
-	pass

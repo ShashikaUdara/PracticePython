@@ -1,5 +1,5 @@
-import Person
-# import Teacher
+from Person import *
+# from Teacher import *
 
 man = Person("Udara", 31, "Kandy, Sri Lanka", "1112223330")
 print(man.get_name())
