@@ -17,8 +17,5 @@ class Person:
 	def get_phone(self):
 		return self.phone
 
-man = Person("Udara", 31, "Kandy, Sri Lanka", "1112223330")
-print(man.get_name())
-print(man.get_age())
-print(man.get_address())
-print(man.get_phone())
+class Teacher(Person):
+	pass
